@@ -58,7 +58,7 @@
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     font-family: sans-serif;
 }
 
@@ -121,9 +121,12 @@
     float: none;
     color: black;
     padding: 12px 16px;
-    text-decoration: none;
     display: block;
     text-align: left;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    
 }
 
 /* Show drop down menu on hover */
@@ -131,6 +134,8 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
 
 }
 
