@@ -1,6 +1,8 @@
 /* Desktop Style */
 @media (min-width:1024px){
 
+
+    /* Sliding page settings */
     *{
         margin: 0;
         padding: 0;
@@ -127,6 +129,7 @@
 
 .log{
     float: right;
+    font-style: italic;
 }
 
 /* Dropdown Container */
@@ -176,6 +179,28 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Column Settings */
+
+.columncontianer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    
+}
+
+.column{
+    flex: 1;
+    padding: 20px;
+    background-color: black;
+    border: 2px solid yellow;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 25);
+   
 }
 
 

@@ -84,6 +84,7 @@
 
 .log{
     float: right;
+    font-style: italic  ;
 }
 
 /* Dropdown Container */
