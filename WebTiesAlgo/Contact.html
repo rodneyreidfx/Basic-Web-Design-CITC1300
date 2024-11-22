@@ -4,67 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 
-<header>
-  <div class="navbar">
-    <a href="Home.html">Home</a>
-    <a href="Plans.html">Plans</a>
-    <a href="InterWeb.html">InterWeb</a>
-    <a href="Contact.html">Contact</a>
-    <div class="log">
-        <a href="log">Log In</a>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Learn
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="https://webties.org/" target="_blank">Webties</a>
-            <a href="https://webtiesacademy.webties.org/" target="_blank">Academy</a>
-            <a href="https://www.youtube.com/@webties4662" target="_blank">Youtube</a>
-            <a href="https://discord.gg/KGt9wnDG" target="_blank">Discord</a>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html" class="navbar-header">Webties Algo</a>
+
+        <a href="Home.html">Home</a>
+        <a href="Plans.html">Plans</a>
+        <a href="InterWeb.html">InterWeb</a>
+        <a href="Contact.html">Contact</a>
+        <div class="log">
+            <a href="log">Log In</a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Learn
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://webties.org/" target="_blank">Webties</a>
+                <a href="https://webtiesacademy.webties.org/" target="_blank">Academy</a>
+                <a href="https://www.youtube.com/@webties4662" target="_blank">Youtube</a>
+                <a href="https://discord.gg/UCbmPHbjdE" target="_blank">Discord</a>
+            </div>
         </div>
     </div>
-</div>
-  
-</header>
 
-
-<body id="pagestyle">
-  <div class="container">
-    <div style="text-align:center">
-      <h2>Contact Us</h2>
-      <p>We Want Your Feed Back:</p>
+    <!-- crypto ticker-->
+    <div class="crypto-ticker-container">
+        <script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
+        <gecko-coin-price-marquee-widget 
+            locale="en" 
+            dark-mode="true" 
+            transparent-background="false" 
+            outlined="true" 
+            coin-ids="bitcoin,ethereum,litecoin,ripple,doge," 
+            initial-currency="usd">
+        </gecko-coin-price-marquee-widget>
     </div>
-    <div class="row">
-      <div class="column">
-        <img src="images/webtieslogo.jpg" style="width:75%">
-      </div>
-      <div class="column">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-            <option value="mexico">Mexico</option>
-            <option value="united kingom">United Kingdom</option>
-          </select>
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
+
+    <div class="main">
+        <main>
+            <h2 class="element">Meet The Team</h2>
+            <p class="elementp">The Vision</p>
+        </main>
+
+        <!--ADD SOME FORM OF CONTACT CARDS-->
+
     </div>
-  </div>
-
-
+    
 </body>
-
 </html>

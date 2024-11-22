@@ -1,13 +1,11 @@
 /* Desktop Style */
-@media (min-width:1024px){
-
-
-    /* Sliding page settings */
+@media (min-width:1024px) {
     *{
         margin: 0;
         padding: 0;
         font-family: 'Poppins', sans-serif;
         box-sizing: border-box;
+        border-bottom: black 5px;
     }
     .container{
         width: 100%;
@@ -15,96 +13,106 @@
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
     }
-    
-    .slides{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-        color: white;
-        scroll-snap-align: start;
-        
-    }
-    
-    .slides img{
-        width: 350px;
-    }
-    
-    .slides h1{
-       font-size: 75px;
-       font-weight: bold;
-       
-    }
-    
-    .slides h2{
-        font-size: 60px;   
-        font-style: italic; 
-    }
-    
-    .slide1{
-        background: linear-gradient(45deg, #6A1E55, #FF9C73);
-    }
-    
-    .slide2{
-        background: linear-gradient(45deg, #3B1C32, #FBD288);
-    }
-    
-    .slide3{
-        background: linear-gradient(45deg, #6A1E55, #FF9C73);
+
+    body {
+        background: linear-gradient(60deg, #6A1E55,#FF9C73);
     }
 
-    .welcome {
+    .element{
         text-align: center;
-        text-decoration: none;
-        font-size: large;
-        font-weight: bold;
-        font-style: italic;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-family: sans-serif;
-        color: white;
-        
+        margin-top: 50px;
+        font-size: 80px;
+        text-decoration: underline;
     }
 
-    .welcome a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    .body1{
+    .elementp {
         text-align: center;
-        text-decoration: none;
-        font-size: medium;
-        font-style: italic;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-family: sans-serif;
-        color: white;
-
+        font-size: 36x;
     }
 
-    .header {
-        background-color: black;
+    .main {
+        display:block;
     }
 
-  #pagestyle {
-    background: linear-gradient(60deg, #6A1E55, #FF9C73);
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-  }
+    /* Container for the columns */
+.columns-container {
+    display: flex;                  
+    justify-content: center;        
+    align-items: center;                   
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 500px;
     
+}
+
+/* Each column styling */
+.column {
+    background-color: black;       
+    color: white;                   
+    border: 2px solid white;        
+    width: 50%;                     
+    margin: 10px;                   
+    padding: 20px;                  
+    text-align: center;             
+    box-sizing: border-box;         
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 50vh;
+}
+
+.column ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    
+}
+
+.column li {
+    word-spacing: 2px;
+    margin-bottom: 5px;
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 
-/* Navbar Container */
+
+h2 {
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+    
+   
+
+
+ /* Navbar Container */
 
 .navbar {
     overflow: hidden;
     background-color: black;
     font-family: sans-serif;
+}
+
+/* Nav Header */
+.navbar-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+    margin-right: auto;
+   
 }
 
 /* Links Inside Navbar */
@@ -116,6 +124,11 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+        font-style: normal;
+      
+      
 }
 
 .navbar a .log {
@@ -129,7 +142,7 @@
 
 .log{
     float: right;
-    font-style: italic;
+    font-style: italic  ;
 }
 
 /* Dropdown Container */
@@ -150,6 +163,11 @@
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+        font-style: normal;
+      
+      
 }
 
 .dropdown-content {
@@ -180,28 +198,5 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-/* Column Settings */
-
-.columncontianer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
-    
-}
-
-.column{
-    flex: 1;
-    padding: 20px;
-    background-color: black;
-    border: 2px solid yellow;
-    color: white;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 25);
-   
-}
-
 
 }

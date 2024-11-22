@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
 </head>
 
-<body id="pagestyle">
+
+
+<body>
+   
     <div class="navbar">
+        <a href="index.html" class="navbar-header">Webties Algo</a>
+
         <a href="Home.html">Home</a>
         <a href="Plans.html">Plans</a>
         <a href="InterWeb.html">InterWeb</a>
@@ -29,23 +37,56 @@
         </div>
     </div>
 
-    <div class="header">
-        <div class="welcome">
-            <h1><a href="index.html">Welcome To The Web</a></h1>
-        </div>
-        
-        <div class="hrheader">
-            <hr>
-        </div>
+    <!-- crypto ticker-->
+    <div class="crypto-ticker-container">
+        <script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
+        <gecko-coin-price-marquee-widget 
+            locale="en" 
+            dark-mode="true" 
+            transparent-background="false" 
+            outlined="true" 
+            coin-ids="bitcoin,ethereum,litecoin,ripple" 
+            initial-currency="usd">
+        </gecko-coin-price-marquee-widget>
+    </div>
 
-        <div class="body1">
-            <p>Webties, founded by the visionary Darion Webster, is an academy dedicated to empowering aspiring traders and transforming the trading industry into an accessible opportunity for everyone. Renowned for providing unparalleled training and education, Webties is now thrilled to introduce its latest innovation: WebtiesAlgo—a cutting-edge tool designed to elevate your trading experience to the next level.</p>
-        </div>
     
+
+    <div class="main">
+        <main>
+            <h2 class="element">Make Trading Great Again</h2>
+            <p class="elementp"> AI can eliminate fear in trading, leading to better decision-making and more time for other activities.</p>
+            <!--ADD A VIDEO HERE ANIMATED ON TRADE OR DWEB TALKING-->
+
+           
+        </main>
+
     </div>
 
 
+    <div class="columns-container">
+        <div class="column">
+            <h2>What We Offer</h2>
+            <ul>
+                <li>Forex AI</li>
+                <li>Crypto AI</li>
+                <li>Futures AI</li>
+                <li>Metals AI</li>
+            </ul>
 
+        </div>
+        <div class="column">
+            <h2>Expereince</h2>
+            <p>Since 2018, Webties has been immersed in the market, refining its approach with a combination of market-making models, SMC, supply and demand analysis, technical indicators, and fundamental research. This multifaceted strategy fuels our advanced algorithms, enabling us to consistently outperform the competition.</p>
+        </div>
+        <div class="column">
+            <h2>Why Webties</h2>
+            <p>Our AI-powered trading platform leverages advanced machine learning techniques to identify profitable opportunities in real-time. By analyzing vast datasets and recognizing complex patterns, we provide our clients with a competitive edge. Our team of experienced quants and data scientists ensures that our algorithms are continually refined and optimized, delivering consistent results.</p>
+        </div>
+    </div>
 
+   
+
+    
 </body>
 </html>
