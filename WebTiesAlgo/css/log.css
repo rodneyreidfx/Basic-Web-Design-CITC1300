@@ -1,5 +1,7 @@
 /* Desktop Style */
 @media (min-width:1024px){
+
+
     *{
         margin: 0;
         padding: 0;
@@ -7,130 +9,16 @@
         box-sizing: border-box;
         border-bottom: black 5px;
     }
+    .container{
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
     body {
-        background: linear-gradient(45deg, #6A1E55,#FF9C73);
+        background: linear-gradient(60deg, #6A1E55,#FF9C73);
     }
-   
-
-    p{
-        font-family: "Anton SC", serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .element{
-        text-align: center;
-        margin-top: 50px;
-        font-size: 80px;
-        text-decoration: underline;
-    }
-
-    .elementp {
-        text-align: center;
-        font-size: 36x;
-    }
-    
-    
-    
-    h2 {
-        font-family: "Anton SC", serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-
-    /* Contact Card Code and Design */
-
-
-.column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 160px;
-    padding: 0 8px;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-  
- 
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-top: 100px;
-  }
-  
-  .container {
-    padding: 0 16px;
-    
-  }
-
-  .container a {
-    text-decoration: none;
-    font-style: inherit;
-    color: inherit;
-    font-family: "Anton SC", serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 14px;
-  }
-  
-
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: black;
-    font-size: 30px;
-    font-style: italic;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-family: "Anton SC", serif;
-        font-weight: 400;
-        font-style: normal;
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }
-
-  .column-d {
-    text-align: center;
-    margin-top: 80px;
-  }
-
-  .column-d h2 {
-    text-decoration: underline;
-    font-size: 30px;
-  }
-
-  .column-d hr {
-    color: black;
-    
-  }
-
-
-
-
-
-
-
-
 
     /* Navbar Container */
 
@@ -235,6 +123,6 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
-    
+
 
 }
