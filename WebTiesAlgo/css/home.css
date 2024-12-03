@@ -34,6 +34,25 @@
         display:block;
     }
 
+
+    /* Video Container */
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto 10px;
+    }
+    
+    video {
+        max-width: 100%; /* Ensures the video is responsive */
+        height: auto;
+    }
+
+    main {
+        margin-bottom: 10px;
+    }
+
     /* Container for the columns */
 .columns-container {
     display: flex;                  
@@ -42,7 +61,7 @@
     font-family: "Anton SC", serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 500px;
+    margin-top: 150px;
     
 }
 
