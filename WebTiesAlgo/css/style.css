@@ -163,4 +163,310 @@
 
 }
 
+/* Mobile Styles */
 
+@media (min-width: 240px) and (max-width: 759px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    .footer {
+        background: linear-gradient(45deg, #6A1E55, #FF9C73);
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .slides {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        color: white;
+        scroll-snap-align: start;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .slides img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .slides h1 {
+        font-size: 35px;
+        font-weight: bold;
+        font-family: "Anton SC", serif;
+    }
+
+    .slides h2 {
+        font-size: 24px;
+        font-style: italic;
+        font-family: "Anton SC", serif;
+        font-weight: 200;
+    }
+
+    .slide1 {
+        background: linear-gradient(45deg, #6A1E55, #FF9C73);
+    }
+
+    .slide2 {
+        background: linear-gradient(45deg, #3B1C32, #FBD288);
+    }
+
+    .slide3 {
+        background: linear-gradient(45deg, #6A1E55, #FF9C73);
+    }
+
+    /* Navbar Container */
+    .navbar {
+        overflow: hidden;
+        background-color: black;
+        font-family: sans-serif;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Links Inside Navbar */
+    .navbar a {
+        display: block;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+    }
+
+    .navbar a .log {
+        float: none;
+        display: block;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .log {
+        float: none;
+        font-style: italic;
+        text-align: center;
+    }
+
+    /* Dropdown Container */
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Dropdown Button */
+    .dropdown .dropbtn {
+        font-size: 14px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 10px;
+        background-color: inherit;
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #f9f9f9;
+        width: 100%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, .2);
+        z-index: 1;
+        text-align: center;
+    }
+
+    /* Links Inside Dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    /* Show dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+
+
+/* Tablet styles */
+
+
+@media (min-width: 760px) and (max-width: 1023px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    .footer {
+        background: linear-gradient(45deg, #6A1E55, #FF9C73);
+        padding: 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .slides {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        color: white;
+        scroll-snap-align: start;
+        padding: 20px;
+    }
+
+    .slides img {
+        width: 300px;
+        height: auto;
+    }
+
+    .slides h1 {
+        font-size: 50px;
+        font-weight: bold;
+        font-family: "Anton SC", serif;
+    }
+
+    .slides h2 {
+        font-size: 40px;
+        font-style: italic;
+        font-family: "Anton SC", serif;
+        font-weight: 200;
+    }
+
+    .slide1 {
+        background: linear-gradient(45deg, #6A1E55, #FF9C73);
+    }
+
+    .slide2 {
+        background: linear-gradient(45deg, #3B1C32, #FBD288);
+    }
+
+    .slide3 {
+        background: linear-gradient(45deg, #6A1E55, #FF9C73);
+    }
+
+    /* Navbar Container */
+    .navbar {
+        overflow: hidden;
+        background-color: black;
+        font-family: sans-serif;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Links Inside Navbar */
+    .navbar a {
+        float: none;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+    }
+
+    .navbar a .log {
+        float: none;
+        display: inline-block;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .log {
+        float: none;
+        font-style: italic;
+        text-align: center;
+    }
+
+    /* Dropdown Container */
+    .dropdown {
+        float: none;
+        display: inline-block;
+        position: relative;
+    }
+
+    /* Dropdown Button */
+    .dropdown .dropbtn {
+        font-size: 14px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 10px 12px;
+        background-color: inherit;
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 120px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, .2);
+        z-index: 1;
+    }
+
+    /* Links Inside Dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    /* Show dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
