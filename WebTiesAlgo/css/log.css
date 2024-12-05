@@ -170,29 +170,6 @@ p {
 
 
 
-
-/* Responsive layout for smaller screens - need to fix */
-@media screen and (max-width: 650px) {
-  .col {
-    width: 100%;
-    margin-top: 0;
-  }
-  /* hide the vertical line */
-  .vl {
-    display: none;
-  }
-  /* show the hidden text on small screens */
-  .hide-md-lg {
-    display: block;
-    text-align: center;
-  }
-}
-
-    
-
-
-
-
     /* Navbar Container */
 
 .navbar {
@@ -299,3 +276,319 @@ p {
 }
 
 
+
+
+/* Mobile Styles */
+
+
+@media (min-width: 240px) and (max-width: 759px) {
+  body {
+    background: linear-gradient(60deg, #FF9C73, #6A1E55);
+}
+
+.container {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+h2, p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.col {
+    width: 100%;
+    padding: 10px;
+}
+
+.vl {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar a {
+    float: none;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.dropdown .dropbtn {
+    width: 100%;
+}
+
+.dropdown-content {
+    position: static;
+    box-shadow: none;
+}
+
+input,
+.btn {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.bottom-container {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.disclaimer {
+    font-size: 14px;
+    padding: 10px;
+}
+}
+
+
+
+/* Tablet Styles */
+
+@media (min-width: 760px) and (max-width: 1023px) {
+
+  * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+      border-bottom: black 5px;
+  }
+
+  .container {
+      width: 100%;
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+  }
+
+  body {
+      background: linear-gradient(60deg, #6A1E55, #FF9C73);
+  }
+
+  /* Log in sections and classes */
+
+  .container {
+      position: relative;
+      border-radius: 5px;
+      background-color: inherit;
+      padding: 20px 0 30px 0;
+      margin-top: 50px;
+      font-family: "Anton SC", serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  input, .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      margin: 5px 0;
+      opacity: 0.85;
+      display: inline-block;
+      font-size: 17px;
+      line-height: 20px;
+      text-decoration: none;
+  }
+
+  input:hover, .btn:hover {
+      opacity: 1;
+  }
+
+  .fb {
+      background-color: #3B5998;
+      color: white;
+  }
+
+  .twitter {
+      background-color: #55ACEE;
+      color: white;
+  }
+
+  .google {
+      background-color: #dd4b39;
+      color: white;
+  }
+
+  input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+      background-color: #45a049;
+  }
+
+  .col {
+      float: left;
+      width: 50%;
+      margin: auto;
+      padding: 0 50px;
+      margin-top: 6px;
+  }
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .vl {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      border: 2px solid #ddd;
+      height: 175px;
+  }
+
+  .inner {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      padding: 8px 10px;
+  }
+
+  .hide-md-lg {
+      display: none;
+  }
+
+  .bottom-container {
+      text-align: center;
+      background-color: #666;
+      border-radius: 0px 0px 4px 4px;
+  }
+
+  .section-header {
+      font-family: "Anton SC", serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  .disclaimer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 20px;
+      font-size: 20px;
+      color: black;
+      background-color: inherit;
+      border-radius: 6px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  h2 {
+      font-family: "Anton SC", serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  p {
+      font-family: "Anton SC", serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  /* Navbar Container */
+
+  .navbar {
+      overflow: hidden;
+      background-color: black;
+      font-family: sans-serif;
+  }
+
+  /* Nav Header */
+  .navbar-header {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      flex-grow: 1;
+      text-align: center;
+      margin-right: auto;
+  }
+
+  /* Links Inside Navbar */
+  .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: "Anton SC", serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  .navbar a .log {
+      float: right;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  .log {
+      float: right;
+      font-style: italic;
+  }
+
+  /* Dropdown Container */
+  .dropdown {
+      float: left;
+      overflow: hidden;
+  }
+
+  /* Dropdown Button */
+  .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      font-family: "Anton SC", serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+      z-index: 1;
+  }
+
+  /* Links Inside Dropdown */
+  .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      font-style: italic;
+      text-decoration: none;
+  }
+
+  /* Show dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+}
